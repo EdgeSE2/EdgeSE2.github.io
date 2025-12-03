@@ -190,6 +190,16 @@ blockquote .quote-line {
 
           <br><br>
           <div>
+            <p><b>Probe Program Synthesis Prompt:</b></p>
+            <p>This prompt synthesis an on-device probe for runtime semantic extraction.</p>
+            <blockquote>
+              <p><b>System</b></p>
+              <div style="font-size: small; font-family: 'Courier New', Courier, monospace;" id="probe_synthesis_prompt"></div>
+            </blockquote>
+          </div>
+
+          <br><br>
+          <div>
             <p><b>Agent Response Regeneration Prompt (taking the retriever as an example):</b></p>
             <p>This prompt instructs atomic agents to regenerate responses if errors occur.</p>
             <blockquote>
@@ -826,7 +836,7 @@ Now, please regenerate the response. Your response must follow the same rules an
         document.getElementById('grade_programmer_user_prompt').innerHTML = marked.parse(grade_programmer_user_prompt);
         document.getElementById('grade_tester_system_prompt').innerHTML = marked.parse(grade_tester_system_prompt);
         document.getElementById('grade_tester_user_prompt').innerHTML = marked.parse(grade_tester_user_prompt);
-
+        document.getElementById('probe_synthesis_prompt').innerHTML = marked.parse(probe_synthesis_prompt);
     </script>
 </body>
 </html>
